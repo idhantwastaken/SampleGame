@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ceip8ilby528h"]
+
+[ext_resource type="Texture2D" uid="uid://ctx84yhalf52l" path="res://Assets/sprites/world_tileset.png" id="1_on2qe"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_3vuvy"]
+normal = Vector2(1, 0)
+
+[node name="Fence" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("WorldBoundaryShape2D_3vuvy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(6, 0)
+texture = ExtResource("1_on2qe")
+region_enabled = true
+region_rect = Rect2(145, 52, 14, 12)

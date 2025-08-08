@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhjhcexytd8t1"]
+
+[ext_resource type="Script" uid="uid://v6dqgcthcll2" path="res://Scripts/water.gd" id="1_slmpt"]
+
+[node name="Water" type="Area2D"]
+script = ExtResource("1_slmpt")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
